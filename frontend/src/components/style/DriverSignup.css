@@ -1,0 +1,115 @@
+/* Base Page */
+.signup-page {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navbar-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-btn {
+  background-color: #004f9f;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #003c7a;
+}
+
+/* Center Body */
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+.signup-heading {
+  color: #004f9f;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Form */
+.signup-form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.signup-form input {
+  padding: 0.9rem 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.signup-form input:focus {
+  border-color: #004f9f;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 79, 159, 0.3);
+}
+
+.submit-btn {
+  background-color: #004f9f;
+  color: white;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #003c7a;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .signup-heading {
+    font-size: 1.6rem;
+  }
+
+  .nav-btn {
+    padding: 0.5rem 1rem;
+  }
+
+  .signup-form {
+    width: 90%;
+  }
+}

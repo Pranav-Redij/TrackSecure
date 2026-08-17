@@ -1,0 +1,114 @@
+/* General layout */
+.home-container {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  padding: 16px 32px;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+/* Buttons on the right */
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.change-btn,
+.logout-btn {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Change Password button */
+.change-btn {
+  background-color: #004f9f;
+  color: white;
+}
+
+.change-btn:hover {
+  background-color: #003b7a;
+}
+
+/* Logout button */
+.logout-btn {
+  background-color: #004f9f;
+  color: white;
+}
+
+.logout-btn:hover {
+  background-color: #c20000;
+}
+
+/* 🆕 Floating “Here” button over map */
+.share-btn {
+  position: fixed;             /* stays fixed even if map moves */
+  bottom: 30px;                /* distance from bottom edge */
+  right: 30px;                 /* distance from right edge */
+  background-color: #bf1313;   /* same blue as theme */
+  color: white;
+  font-weight: 600;
+  padding: 12px 26px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  z-index: 1000;               /* ensures it stays above map */
+}
+
+/* 🆕 Hover effect for smooth animation */
+.share-btn:hover {
+  background-color: #9e0b0b;
+  transform: scale(1.05);
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav-buttons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .change-btn,
+  .logout-btn {
+    flex: 1;
+    width: 100%;
+  }
+
+  /* 🆕 Make the floating button smaller on small screens */
+  .share-btn {
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}

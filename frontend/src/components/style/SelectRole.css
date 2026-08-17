@@ -1,0 +1,88 @@
+/* ====== GENERAL RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: #000;
+}
+
+/* ====== NAVBAR ====== */
+.navbar {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* ====== MAIN CONTENT ====== */
+.content {
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* ====== BUTTONS ====== */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.role-btn {
+  background-color: #004f9f;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.9rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.role-btn:hover {
+  background-color: #003a78;
+  transform: translateY(-3px);
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .role-btn {
+    width: 80%;
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,80 @@
+/* ===== RESET & BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* ===== PAGE ===== */
+.temp-home-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.nav-left {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* ===== CONTENT ===== */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+/* ===== TEXT ===== */
+.title {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* ===== CLOCK ===== */
+.clock {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #004f9f;
+  letter-spacing: 3px;
+  padding: 1rem 2rem;
+  border: 2px solid #004f9f;
+  border-radius: 12px;
+  min-width: 200px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .clock {
+    font-size: 3rem;
+    min-width: 160px;
+  }
+}

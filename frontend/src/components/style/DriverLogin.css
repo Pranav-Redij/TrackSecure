@@ -1,0 +1,130 @@
+/* ===== RESET & BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.nav-right {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Updated nav button styling */
+.nav-btn {
+  background-color: #ffffff;
+  color: #004f9f;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.nav-btn:hover {
+  background-color: #004f9f;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* ===== MAIN CONTENT ===== */
+.content {
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+/* ===== FORM ===== */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 320px;
+  max-width: 90%;
+}
+
+.login-form input {
+  padding: 0.9rem 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.login-form input:focus {
+  border-color: #004f9f;
+  box-shadow: 0 0 5px rgba(0, 79, 159, 0.2);
+}
+
+.submit-btn {
+  background-color: #004f9f;
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.submit-btn:hover {
+  background-color: #003a78;
+  transform: translateY(-2px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .nav-left {
+    font-size: 1.3rem;
+  }
+
+  .nav-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .login-form input,
+  .submit-btn {
+    font-size: 1rem;
+  }
+}

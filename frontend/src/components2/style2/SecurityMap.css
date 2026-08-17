@@ -1,0 +1,77 @@
+/* ===== BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== PAGE ===== */
+.temp-map-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== NAVBAR (same theme) ===== */
+
+.nav-center a {
+  text-decoration: none;   /* remove underline */
+  color: inherit;          /* inherit white color */
+  display: flex;           /* align like before */
+  align-items: center;
+}
+
+
+.navbar {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+.nav-left {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.nav-center {
+  margin-left: auto;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-text {
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.nav-text.active {
+  color: #004f9f;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.logout-btn {
+  margin-left: 1.5rem;
+  background: #fff;
+  color: #004f9f;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ===== MAP ===== */
+#map {
+  flex: 1;
+  width: 100%;
+}
